@@ -1,22 +1,22 @@
-import 'package:flutter/material.dart';
 
 import 'pages/login_page.dart';
-//Main function Entry for flutter
-void main(){
-  runApp(Myapp());
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
 }
 
-// Rood widget
-class Myapp extends StatelessWidget {
+//Root Widget
+class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
-   return MaterialApp(
-   debugShowCheckedModeBanner:false,
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
 
-     theme: ThemeData(
-       primaryColor: Colors.indigo,
-     ),
-         home: LoginPage(),
-  );
-}
+      theme: ThemeData(
+        primaryColor: Colors.indigo,
+      ),
+      home: LoginPage(),
+    );
+  }
 }
